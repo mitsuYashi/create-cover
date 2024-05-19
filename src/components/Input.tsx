@@ -23,7 +23,7 @@ export const Input = () => {
         versionRef.current?.value && params.set("version", versionRef.current!.value);
         dateRef.current?.value && params.set("date", dateRef.current!.value);
         projectNameRef.current?.value && params.set("projectName", projectNameRef.current!.value);
-        router.push(`/pdfview?${params.toString()}`);
+        router.push(`/pdf?${params.toString()}`);
     }
 
     return (
